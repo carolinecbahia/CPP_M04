@@ -6,12 +6,12 @@
 /*   By: ccavalca <ccavalca@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/12 14:23:24 by ccavalca          #+#    #+#             */
-/*   Updated: 2026/03/13 21:54:49 by ccavalca         ###   ########.fr       */
+/*   Updated: 2026/04/08 12:10:08 by ccavalca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <cctype>
 #include <iostream>
+#include <cctype>
 
 int	main(int argc, char **argv)
 {
