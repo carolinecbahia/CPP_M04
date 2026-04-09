@@ -5,8 +5,8 @@
 #                                                     +:+ +:+         +:+      #
 #    By: ccavalca <ccavalca@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 0026/03/12 14:19:48 by +#                #+#    #+#              #
-#    Updated: 2026/04/09 13:40:09 by ccavalca         ###   ########.fr        #
+#    Created: 2026/03/12 14:19:48 by ccavalca          #+#    #+#              #
+#    Updated: 2026/04/09 14:22:29 by ccavalca         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,14 +32,16 @@ OBJ_DIR		=	obj/
 # ============================================================================
 
 # Collect all .cpp files from current directory
-SRC_FILES	=	./PhoneBook.cpp \
-				./Contact.cpp \
-				./main.cpp \
+SRC_FILES	=	./main.c \
+				./Zombie.hpp \
+				./Zombie.cpp \
+				./newZombie.cpp \
+				./randomChump.cpp \
 
 OBJ_FILES	=	$(SRC_FILES:$(SRC_DIR)%.cpp=$(OBJ_DIR)%.o)
 
 # Main executable name (change as needed)
-NAME		=	phonebook
+NAME		=	zombie
 
 # ============================================================================
 # RULES

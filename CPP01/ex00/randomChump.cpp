@@ -1,36 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   PhoneBook.hpp                                      :+:      :+:    :+:   */
+/*   randomChump.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccavalca <ccavalca@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/03/13 22:02:20 by ccavalca          #+#    #+#             */
-/*   Updated: 2026/04/09 13:09:13 by ccavalca         ###   ########.fr       */
+/*   Created: 2026/04/09 14:21:29 by ccavalca          #+#    #+#             */
+/*   Updated: 2026/04/09 15:20:21 by ccavalca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PHONEBOOK_HPP
-# define PHONEBOOK_HPP
+#include "Zombie.hpp"
 
-# include "Contact.hpp"
-
-class PhoneBook
+void randomChump(std::string name)
 {
-
-	private:
-	Contact _contacts[8];
-	int _index;
-	std::string getValidInput(std::string prompt) const;
-	std::string formatField(std::string text) const;
-
-	public:
-	PhoneBook();
-	~PhoneBook();
-
-	void addContact();
-	void searchContact() const;
-
-};
-
-#endif
+    Zombie z2;
+    
+    
+}
