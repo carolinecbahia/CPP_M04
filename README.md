@@ -245,8 +245,8 @@ c++ -Wall -Wextra -Werror -std=c++98 *.cpp -o executable_name
 
 | Module | Status | Concepts |
 |--------|--------|----------|
-| CPP00 | 🔄 | Classes, OOP Basics |
-| CPP01 | 🔄 | Memory, Pointers, References |
+| CPP00 | ✅ | Classes, OOP Basics |
+| CPP01 | ✅ | Memory, Pointers, References |
 | CPP02 | 🔄 | Operator Overloading, OCF |
 | CPP03 | 🔄 | Inheritance |
 | CPP04 | 🔄 | Polymorphism, Virtual Functions |
@@ -274,6 +274,6 @@ These projects are part of the 42 School curriculum.
 
 **Repository**: C++ Modules - 42 School Milestone 04  
 **Language**: C++98  
-**Last Updated**: February 2026
+**Last Updated**: April 2026
 
 **Start with CPP00 and progress sequentially. Each module builds on the previous one!** 🚀

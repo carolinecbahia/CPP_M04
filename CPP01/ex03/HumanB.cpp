@@ -6,15 +6,16 @@
 /*   By: ccavalca <ccavalca@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/14 00:16:30 by ccavalca          #+#    #+#             */
-/*   Updated: 2026/04/14 00:52:28 by ccavalca         ###   ########.fr       */
+/*   Updated: 2026/04/14 02:03:52 by ccavalca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "HumanB.hpp"
 
-HumanB::HumanB(std::string name): _name(name), _weapon(NULL)
+HumanB::HumanB(std::string name) : _name(name)
 {
-	std::cout << this->_name << " has enter the battle!" << std::endl;
+    this->_weapon = NULL;
+    std::cout << this->_name << " has entered the battle unarmed!" << std::endl;
 }
 
 HumanB::~HumanB()

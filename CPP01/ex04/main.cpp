@@ -5,32 +5,20 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccavalca <ccavalca@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/14 00:15:01 by ccavalca          #+#    #+#             */
-/*   Updated: 2026/04/14 02:07:18 by ccavalca         ###   ########.fr       */
+/*   Created: 2026/04/14 02:08:06 by ccavalca          #+#    #+#             */
+/*   Updated: 2026/04/14 02:13:26 by ccavalca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Weapon.hpp"
-#include "HumanA.hpp"
-#include "HumanB.hpp"
+#include "sed.hpp"
 
-int main()
+int main(int argc, char **argv)
 {
-		Weapon club("crude spiked club");
-		HumanA bob("Bob", club);
+	if (argc != 4)
+	{
+		std::cout << "Error: wrong numbers of parameters!" << std::endl;
+		std::cout << "[USAGE] ./sed <filename> 'string1', 'string2'" << std::endl;
+	}
 
-        bob.attack();
-        club.setType("some other type of club");
-        bob.attack();
-
-        Weapon sword("short sword");
-        HumanB jim("Jim");
-
-        jim.attack();
-        jim.setWeapon(sword);
-        jim.attack();
-        sword.setType("some other type of sword");
-        jim.attack();
-
-    return (0);
+	
 }
