@@ -23,7 +23,9 @@ OBJ_DIR		=	obj/
 SRC_FILES	=	./main.cpp \
 				./Animal.cpp \
 				./Dog.cpp \
-				./Cat.cpp
+				./Cat.cpp \
+				./WrongAnimal.cpp \
+				./WrongCat.cpp
 
 OBJ_FILES	=	$(SRC_FILES:$(SRC_DIR)%.cpp=$(OBJ_DIR)%.o)
 
