@@ -5,8 +5,8 @@
 #                                                      +:+ +:+         +:+     #
 #   By: ccavalca <ccavalca@student.42sp.org.br>      +#+  +:+       +#+        #
 #                                                  +#+#+#+#+#+   +#+           #
-#   Created: 0026/03/12 14:19:48 by avalca              #+#    #+#             #
-#   Updated: 2026/04/13 23:01:20 by ccavalca           ###   ########.fr       #
+#   Created: 0026/03/12 14:19:48 by #+#                 #+#    #+#             #
+#   Updated: 2026/04/13 23:47:55 by ccavalca           ###   ########.fr       #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,16 +32,12 @@ OBJ_DIR		=	obj/
 # ============================================================================
 
 # Collect all .cpp files from current directory
-SRC_FILES	=	./main.cpp \
-				./Zombie.hpp \
-				./Zombie.cpp \
-				./newZombie.cpp \
-				./randomChump.cpp \
+SRC_FILES	=	./main.cpp
 
 OBJ_FILES	=	$(SRC_FILES:$(SRC_DIR)%.cpp=$(OBJ_DIR)%.o)
 
 # Main executable name (change as needed)
-NAME		=	zombie
+NAME		=	sed
 
 # ============================================================================
 # RULES

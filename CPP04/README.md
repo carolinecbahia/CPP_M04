@@ -2,6 +2,7 @@
 
 *This project has been created as part of the 42 curriculum.*
 
+[![Grade](https://img.shields.io/badge/grade-xx%2F100-brightgreen.svg)]()
 [![Language](https://img.shields.io/badge/language-C%2B%2B-blue.svg)]()
 [![Standard](https://img.shields.io/badge/standard-C%2B%2B98-blue.svg)]()
 [![Status](https://img.shields.io/badge/status-In%20Progress-yellow.svg)]()

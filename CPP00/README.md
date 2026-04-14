@@ -1,10 +1,12 @@
 # C++ Module 00: Introduction to Object-Oriented Programming
 
+
 *This project has been created as part of the 42 curriculum.*
 
+[![Grade](https://img.shields.io/badge/grade-80%2F100-orange.svg)]()
 [![Language](https://img.shields.io/badge/language-C%2B%2B-blue.svg)]()
 [![Standard](https://img.shields.io/badge/standard-C%2B%2B98-blue.svg)]()
-[![Status](https://img.shields.io/badge/status-In%20Progress-yellow.svg)]()
+[![Status](https://img.shields.io/badge/status-Completed-brightgreen.svg)]()
 
 ## Description
 
@@ -164,5 +166,5 @@ After completing this module, you should understand:
 
 ---
 
-**Status:** 🔄 In Progress  
-**Last Updated:** February 24, 2026
+**Status:** ✅ Completed  
+**Last Updated:** April 14, 2026

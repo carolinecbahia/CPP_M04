@@ -6,7 +6,7 @@
 /*   By: ccavalca <ccavalca@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/09 14:21:38 by ccavalca          #+#    #+#             */
-/*   Updated: 2026/04/13 23:15:25 by ccavalca         ###   ########.fr       */
+/*   Updated: 2026/04/13 23:40:00 by ccavalca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,18 @@
 
 int main()
 {
-    Zombie* z1 = newZombie("Boo");
-	Zombie* z2 = newZombie("Loo");
+    Zombie* horde1 = zombieHorde(5, "Boo");
+	Zombie* horde2 = zombieHorde(10, "Loo");
 
-	z1->announce();
-	z2->announce();
-	
-	delete z1;
-	delete z2;
-	
-	randomChump("Foo");
-	randomChump("Zoo");
+	horde1[0].announce();
+	horde1[3].announce();
 
+	horde2[0].announce();
+	horde2[5].announce();
+	horde2[9].announce();
+
+	delete[] horde1;
+	delete[] horde2;
+	
 	return 0;
 }

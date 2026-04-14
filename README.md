@@ -2,7 +2,6 @@
 
 > A comprehensive series of modules introducing Object-Oriented Programming fundamentals using C++98, building progressively from basic classes to advanced concepts like inheritance, polymorphism, and exception handling.
 
-[![Language](https://img.shields.io/badge/language-C++-blue.svg)]()
 [![Standard](https://img.shields.io/badge/standard-C++98-orange.svg)]()
 [![Status](https://img.shields.io/badge/status-In%20Development-yellow.svg)]()
 [![Modules](https://img.shields.io/badge/modules-5-success.svg)]()
@@ -257,8 +256,11 @@ c++ -Wall -Wextra -Werror -std=c++98 *.cpp -o executable_name
 ## 🔗 Individual Module READMEs
 
 Each module has its own detailed documentation. For specific module details, refer to:
-- [CPP00 Subject](../templates/subjects/cpp00_subject.md)
-- [CPP01 Subject](../templates/subjects/cpp01_subject.md)
+- [CPP00 README](CPP00/README.md)
+- [CPP01 README](CPP01/README.md)
+- [CPP02 README](CPP02/README.md)
+- [CPP03 README](CPP03/README.md)
+- [CPP04 README](CPP04/README.md)
 
 ---
 

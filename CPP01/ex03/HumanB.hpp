@@ -1,30 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   HumanB.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccavalca <ccavalca@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/09 14:21:38 by ccavalca          #+#    #+#             */
-/*   Updated: 2026/04/13 23:15:25 by ccavalca         ###   ########.fr       */
+/*   Created: 2026/04/14 00:16:37 by ccavalca          #+#    #+#             */
+/*   Updated: 2026/04/14 00:52:28 by ccavalca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#ifndef HUMANB_HPP
+# define HUMANB_HPP
 
-int main()
-{
-    Zombie* z1 = newZombie("Boo");
-	Zombie* z2 = newZombie("Loo");
+#include "Weapon.hpp"
 
-	z1->announce();
-	z2->announce();
+class HumanB{
+	private:
 	
-	delete z1;
-	delete z2;
-	
-	randomChump("Foo");
-	randomChump("Zoo");
+	std::string _name;
+	Weapon* _weapon;
 
-	return 0;
-}
+	public:
+	HumanB(std::string name);
+	~HumanB();
+
+	void setWeapon(Weapon& weapon);
+	void attack();
+};
+
+#endif

@@ -1,30 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Weapon.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccavalca <ccavalca@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/09 14:21:38 by ccavalca          #+#    #+#             */
-/*   Updated: 2026/04/13 23:15:25 by ccavalca         ###   ########.fr       */
+/*   Created: 2026/04/14 00:16:50 by ccavalca          #+#    #+#             */
+/*   Updated: 2026/04/14 00:51:04 by ccavalca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#include "Weapon.hpp"
 
-int main()
+Weapon::Weapon(std::string type): _type(type)
 {
-    Zombie* z1 = newZombie("Boo");
-	Zombie* z2 = newZombie("Loo");
+	std::cout << "The " << type << " has been choosen!" << std::endl;
+}
 
-	z1->announce();
-	z2->announce();
-	
-	delete z1;
-	delete z2;
-	
-	randomChump("Foo");
-	randomChump("Zoo");
+Weapon::~Weapon()
+{
+	std::cout << "The weapon has been destroied!" << std::endl;
+}
 
-	return 0;
+void Weapon::setType(std::string type)
+{
+	this->_type = type;
+}
+
+const std::string& Weapon::getType() const
+{
+	return (this->_type);
 }

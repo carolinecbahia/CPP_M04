@@ -1,10 +1,12 @@
 # C++ Module 01: Memory Allocation, Pointers to Members, References and Switch Statements
 
+
 *This project has been created as part of the 42 curriculum.*
 
+[![Grade](https://img.shields.io/badge/grade-100%2F100-brightgreen.svg)]()
 [![Language](https://img.shields.io/badge/language-C%2B%2B-blue.svg)]()
 [![Standard](https://img.shields.io/badge/standard-C%2B%2B98-blue.svg)]()
-[![Status](https://img.shields.io/badge/status-In%20Progress-yellow.svg)]()
+[![Status](https://img.shields.io/badge/status-Completed-brightgreen.svg)]()
 
 ## Description
 
@@ -235,6 +237,6 @@ nm ./program | grep -E "^[0-9a-f]+.*new|delete"
 
 ---
 
-**Status:** 🔄 In Progress  
+**Status:** ✅ Completed  
 **Difficulty Level:** Medium  
-**Last Updated:** February 24, 2026
+**Last Updated:** April 14, 2026

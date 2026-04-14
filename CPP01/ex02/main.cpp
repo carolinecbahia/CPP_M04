@@ -5,26 +5,28 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccavalca <ccavalca@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/09 14:21:38 by ccavalca          #+#    #+#             */
-/*   Updated: 2026/04/13 23:15:25 by ccavalca         ###   ########.fr       */
+/*   Created: 2026/04/13 23:42:30 by ccavalca          #+#    #+#             */
+/*   Updated: 2026/04/14 00:12:29 by ccavalca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#include <iostream>
 
 int main()
 {
-    Zombie* z1 = newZombie("Boo");
-	Zombie* z2 = newZombie("Loo");
+	std::string string = "HI THIS IS BRAIN";
 
-	z1->announce();
-	z2->announce();
-	
-	delete z1;
-	delete z2;
-	
-	randomChump("Foo");
-	randomChump("Zoo");
+	std::string &stringREF = string; //referência
+	std::string* stringPTR;
+	stringPTR = &string; //ponteiro
 
+	std::cout << "'string' Adress: " << &string << std::endl;
+	std::cout << "'stringREF' Adress: " << &stringREF << std::endl;
+	std::cout << "'stringPTR' Adress: " << stringPTR << std::endl;
+
+	std::cout << "'string' value: " << string << std::endl;
+	std::cout << "'stringREF' value: " << stringREF << std::endl;
+	std::cout << "'stringPTR' value: " << *stringPTR << std::endl;
+	
 	return 0;
 }
