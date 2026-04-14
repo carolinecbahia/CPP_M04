@@ -1,12 +1,12 @@
 # **************************************************************************** #
 #                                                                              #
-#                                                          :::      ::::::::   #
-#   Makefile                                             :+:      :+:    :+:   #
-#                                                      +:+ +:+         +:+     #
-#   By: ccavalca <ccavalca@student.42sp.org.br>      +#+  +:+       +#+        #
-#                                                  +#+#+#+#+#+   +#+           #
-#   Created: 0026/03/12 14:19:48 by #+#                 #+#    #+#             #
-#   Updated: 2026/04/14 02:12:26 by ccavalca           ###   ########.fr       #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: ccavalca <ccavalca@student.42sp.org.br>    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 0026/03/12 14:19:48 by +#                #+#    #+#              #
+#    Updated: 2026/04/14 12:07:03 by ccavalca         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,7 +33,7 @@ OBJ_DIR		=	obj/
 
 # Collect all .cpp files from current directory
 SRC_FILES	=	./main.cpp \
-				./sed.cpp \
+				./Replacer.cpp \
 
 OBJ_FILES	=	$(SRC_FILES:$(SRC_DIR)%.cpp=$(OBJ_DIR)%.o)
 

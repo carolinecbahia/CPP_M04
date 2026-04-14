@@ -5,35 +5,32 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccavalca <ccavalca@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/14 02:08:06 by ccavalca          #+#    #+#             */
-/*   Updated: 2026/04/14 12:09:26 by ccavalca         ###   ########.fr       */
+/*   Created: 2026/04/14 12:37:41 by ccavalca          #+#    #+#             */
+/*   Updated: 2026/04/14 12:39:52 by ccavalca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Replacer.hpp"
+#include "Harl.hpp"
 
-int main(int argc, char **argv)
+int main()
 {
-	if (argc != 4)
-	{
-		std::cout << "Error: wrong numbers of parameters!" << std::endl;
-		std::cout << "[USAGE] ./sed <filename> 'string1', 'string2'" << std::endl;
-		return 1;
-	}
+    Harl harl;
 
-	Replacer rep(argv[1]);
-	rep.replace(argv[2], argv[3]);
+    std::cout << "=== TEST 1: DEBUG ===" << std::endl;
+    harl.complain("DEBUG");
 
-	return 0;
+    std::cout << "=== TEST 2: INFO ===" << std::endl;
+    harl.complain("INFO");
+
+    std::cout << "=== TEST 3: WARNING ===" << std::endl;
+    harl.complain("WARNING");
+
+    std::cout << "=== TEST 4: ERROR ===" << std::endl;
+    harl.complain("ERROR");
+
+    std::cout << "=== TEST 5: INVALID PARAMETERS ===" << std::endl;
+    harl.complain("ANYTHING");
+    harl.complain("");
+
+    return 0;
 }
-
-/*
-TESTE
-
-A construcao do castelo comecou hoje.
-castelo de areia, castelo de pedra, castelocastelo.
-O engenheiro olhou para o castelo e disse:
-"Este castelo precisa de mais cimento!"
-Fim da inspecao do castelo
-
-*/

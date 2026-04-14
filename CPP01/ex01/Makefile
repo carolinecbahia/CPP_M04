@@ -1,12 +1,12 @@
 # **************************************************************************** #
 #                                                                              #
-#                                                          :::      ::::::::   #
-#   Makefile                                             :+:      :+:    :+:   #
-#                                                      +:+ +:+         +:+     #
-#   By: ccavalca <ccavalca@student.42sp.org.br>      +#+  +:+       +#+        #
-#                                                  +#+#+#+#+#+   +#+           #
-#   Created: 0026/03/12 14:19:48 by ca                  #+#    #+#             #
-#   Updated: 2026/04/13 23:23:32 by ccavalca           ###   ########.fr       #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: ccavalca <ccavalca@student.42sp.org.br>    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 0026/03/12 14:19:48 by a                 #+#    #+#              #
+#    Updated: 2026/04/14 12:43:24 by ccavalca         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -40,7 +40,7 @@ SRC_FILES	=	./main.cpp \
 OBJ_FILES	=	$(SRC_FILES:$(SRC_DIR)%.cpp=$(OBJ_DIR)%.o)
 
 # Main executable name (change as needed)
-NAME		=	zombie
+NAME		=	zombiehorde
 
 # ============================================================================
 # RULES

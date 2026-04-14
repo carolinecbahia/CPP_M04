@@ -6,7 +6,7 @@
 /*   By: ccavalca <ccavalca@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/14 00:16:30 by ccavalca          #+#    #+#             */
-/*   Updated: 2026/04/14 02:03:52 by ccavalca         ###   ########.fr       */
+/*   Updated: 2026/04/14 12:27:52 by ccavalca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,12 @@
 HumanB::HumanB(std::string name) : _name(name)
 {
     this->_weapon = NULL;
-    std::cout << this->_name << " has entered the battle unarmed!" << std::endl;
+    std::cout << "[CONSTRUCTOR]" << this->_name << " has entered the battle unarmed!" << std::endl;
 }
 
 HumanB::~HumanB()
 {
-	std::cout << this->_name << " has left the battle!" << std::endl;
+	std::cout << "[DESTRUCTOR]" << this->_name << " has left the battle!" << std::endl;
 }
 
 void HumanB::setWeapon(Weapon& weapon)
