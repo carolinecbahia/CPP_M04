@@ -21,10 +21,11 @@ OBJ_DIR		=	obj/
 
 # Collect all .cpp files from current directory
 SRC_FILES	=	./main.cpp \
-				./Animal.cpp \
-				./Dog.cpp \
-				./Cat.cpp \
-				./Brain.cpp
+				./AMateria.cpp \
+				./Ice.cpp \
+				./Cure.cpp \
+				./Character.cpp \
+				./MateriaSource.cpp
 
 OBJ_FILES	=	$(SRC_FILES:$(SRC_DIR)%.cpp=$(OBJ_DIR)%.o)
 
@@ -75,7 +76,8 @@ run: all
 
 valgrind: debug
 	@valgrind --leak-check=full --show-leak-kinds=all \
-		--track-origins=yes ./$(NAME)
+		--track-origins=yes
+		./$(NAME)
 
 # ============================================================================
 # HELP

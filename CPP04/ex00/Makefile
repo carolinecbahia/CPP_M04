@@ -76,8 +76,7 @@ run: all
 
 valgrind: debug
 	@valgrind --leak-check=full --show-leak-kinds=all \
-		--track-origins=yes
-		./$(NAME)
+		--track-origins=yes ./$(NAME)
 
 # ============================================================================
 # HELP
